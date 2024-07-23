@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang = "en"> <!--for english language & html is the root element-->
+    <head>
+        <meta charset = "UTF-8"> 
+            <!--specifies character encoding for HTML.
+            "UTF-8" stands for "Unicode Transformation Format - 8 bit,"
+            which is a character encoding capable of encoding all possible characters in Unicode.
+            This ensures that web page displays characters correctly, regardless of language or symbols used.
+            It's especially important for displaying characters from different languages, special symbols, and emojis accurately.-->
+        <meta http-equiv="X-UA-Cpmpatible" content="IE=edge">
+            <!--to specify the document mode for Internet Explorer.
+            This tag instructs Internet Explorer to use latest rendering engine available (Edge mode),
+            rather than falling back to older versions
+            http-equiv="X-UA-Compatible": indicates that meta tag is setting a value for the browser's compatibility mode.
+            content="IE=edge": This value tells Internet Explorer to use the Edge mode, which is most current and standards-compliant mode.-->
+        <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+            <!--to control the layout on mobile browsers.
+            It ensures that your web page is displayed correctly on devices with different screen sizes.-->
+        <title>Job Application Form</title>
+        <link rel="stylesheet" href="style.css"> <!--to grab the style.css content-->
+    </head>
+
+        <body>
+            <div class="container"> <!--shortcut : .container for whole div tag-->
+                <div class="apply_box"> <!--shortcut : .apply_box for whole div tag-->
+                   <h1>Job Application
+                     <span class = "title_small">(Web)</span>
+                   </h1>
+                   <form action="">
+                        <class="form_container">
+
+                            <div class="form_control">
+                                <label for="first_name"> First Name </label>
+                                <input id="first_name"
+                                       name="first_name"
+                                       placeholder="Enter First Name.. "/>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="last_name"> Last Name </label>
+                                <input id="last_name"
+                                       name="last_name"
+                                       placeholder="Enter Last Name.. "/>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="email"> Email </label>
+                                <input type="email"
+                                       id="email" 
+                                       name="email"
+                                       placeholder="Enter Email.. "/>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="job_role"> Job Role </label>
+                                <select id="job_role"
+                                        name="job_role">
+                                        <option value="">Select Job Role</option>
+                                        <option value="frontend">Frontend Developer</option>
+                                        <option value="backend">Backend Developer</option>
+                                        <option value="full_stack">Full Stack Developer</option>
+                                        <option value="ui_ux">UI UX Designer</option>
+                                </select>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="address"> Address </label>
+                                <textarea
+                                    id="address"
+                                    name="address"
+                                    rows="4"
+                                    cols="50"
+                                    placeholder="Enter Address.."/>
+                                </textarea>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="city"> City </label>
+                                <input id="city"
+                                       name="city"
+                                       placeholder="Enter City Name.. "/>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="pincode"> Pincode </label>
+                                <input 
+                                    type="number" 
+                                    id="pincode"
+                                    name="pincode"
+                                    placeholder="Enter Pincode.. "/>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="date"> Date </label>
+                                <input 
+                                    value="2024-07-18"
+                                    type="date" 
+                                    id="date"
+                                    name="date" />
+                            </div>
+
+                            <div class="form_control">
+                                <label for="upload"> Upload Your CV </label>
+                                <input 
+                                    type="file" 
+                                    id="upload"
+                                    name="upload" />
+                            </div>
+
+                            <div class="button_container">
+                                <button type="submit">
+                                    Apply Now
+                                </button>
+                            </div>
+
+                        </div>
+                   </form>
+                </div> 
+            </div> 
+        </body>
+</html>
